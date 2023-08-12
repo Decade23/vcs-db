@@ -1,0 +1,272 @@
+### get users
+GET http://localhost:8080/afccwa/api/v1/users
+Accept: application/json
+Content-Type: application/json
+
+{
+  "limit": 5,
+  "page": 1
+}
+
+### get messages
+GET http://localhost/afccwa/api/v1/messages
+Accept: application/json
+Content-Type: application/json
+
+{
+  "limit": 5,
+  "page": 1
+}
+
+### get messages conversation
+GET http://localhost:8080/afccwa/api/v1/messages/conversation
+Accept: application/json
+Content-Type: application/json
+
+{
+  "handle_by_user": "agent_wa1"
+}
+
+### sent message
+POST http://localhost:8080/afccwa/api/v1/message
+Accept: application/json
+Content-Type: application/json
+Authorization: ad1one eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFnZW50X3dhMSIsImdyb3VwX2lkIjoiQUdFTlRfV0EiLCJuYW1lIjoiQWdlbnQgV0EgMSIsImlhdCI6MTY4MjUzMzMzOSwiZXhwIjoxNjgyNTYyMTM5fQ.BvbkxxCca049R7L4-PbdCkgcq3rkwtuOGpOrUcU2e_I
+
+{
+  "to": "6285693380123",
+  "text": "hi there"
+}
+
+### sent message directly infobip
+POST https://mplwm9.api.infobip.com/whatsapp/1/message/text
+Accept: application/json
+Content-Type: application/json
+Authorization: App 2e5a4a94a07cc833f0c9521fa9e85be6-01ca2ebb-cb7b-468b-8772-31415bebe0a3
+
+{
+  "from": "447860099299",
+  "to": "6285693380123",
+  "messageId": "",
+  "content": {
+    "text": "haloo wa dari nodejs test lagi aja",
+    "previewUrl": ""
+  },
+  "callbackData": "",
+  "notifyUrl": ""
+}
+
+### generate seeds messages
+POST http://localhost/afccwa/api/v1/seed/message
+Accept: application/json
+Content-Type: application/json
+
+
+### generate seeds users
+POST http://localhost/afccwa/api/v1/seed/users
+Accept: application/json
+Content-Type: application/json
+
+### generate seeds {make all dummy into db wa}
+GET http://localhost/afccwa/api/v1/seeds/migrate
+Accept: application/json
+Content-Type: application/json
+
+
+### GET CC USER LOGIN
+GET http://localhost:8080/afccwa/api/v1/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "limit": 5,
+  "page": 1
+}
+
+### CC USER LOGIN
+POST http://localhost:8080/afccwa/api/v1/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "username": "agent_wa1",
+  "password": "12345"
+}
+
+### CC CURRENT USER
+POST http://localhost:8080/afccwa/api/v1/me
+Accept: application/json
+Content-Type: application/json
+Authorization: ad1one eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFnZW50X3dhMSIsImdyb3VwX2lkIjoiQUdFTlRfV0EiLCJuYW1lIjoiQWdlbnQgV0EgMSIsImlhdCI6MTY4NTg5MzE5NiwiZXhwIjoxNjg1OTIxOTk2fQ.RNE6DgcGiR5mov7Jy4Y5RQsdTOG5mvPcj2sGDeSB9D0
+
+### CC MENU TEMPLATE MESSAGE
+### GET
+POST http://localhost:8080/afccwa/api/v1/menu/template-messages
+Accept: application/json
+Content-Type: application/json
+Authorization: ad1one eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFnZW50X3dhMSIsImdyb3VwX2lkIjoiQUdFTlRfV0EiLCJuYW1lIjoiQWdlbnQgV0EgMSIsImlhdCI6MTY4NTg5MzE5NiwiZXhwIjoxNjg1OTIxOTk2fQ.RNE6DgcGiR5mov7Jy4Y5RQsdTOG5mvPcj2sGDeSB9D0
+
+{
+  "limit": 200,
+  "page": 1
+}
+
+### POST
+POST http://localhost:8080/afccwa/api/v1/menu/template-message
+Accept: application/json
+Content-Type: application/json
+Authorization: ad1one eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFnZW50X3dhMSIsImdyb3VwX2lkIjoiQUdFTlRfV0EiLCJuYW1lIjoiQWdlbnQgV0EgMSIsImlhdCI6MTY4NTg5MzE5NiwiZXhwIjoxNjg1OTIxOTk2fQ.RNE6DgcGiR5mov7Jy4Y5RQsdTOG5mvPcj2sGDeSB9D0
+
+{
+  "title": "notif payment 3.1",
+  "message": "hai __name__ pembayaran anda telah kami terima"
+}
+
+### POST
+POST http://localhost:8080/afccwa/api/v1/menu/template-message/schedule-list
+Accept: application/json
+Content-Type: application/json
+Authorization: ad1one eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFnZW50X3dhMSIsImdyb3VwX2lkIjoiQUdFTlRfV0EiLCJuYW1lIjoiQWdlbnQgV0EgMSIsImlhdCI6MTY4NTg5MzE5NiwiZXhwIjoxNjg1OTIxOTk2fQ.RNE6DgcGiR5mov7Jy4Y5RQsdTOG5mvPcj2sGDeSB9D0
+
+{
+  "id_template_message": "b8cc93fd-eb30-11ed-b2a6-18cc18ff2d8b"
+}
+
+### PUT
+PUT http://localhost:8080/afccwa/api/v1/menu/template-message
+Accept: application/json
+Content-Type: application/json
+Authorization: ad1one eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFnZW50X3dhMSIsImdyb3VwX2lkIjoiQUdFTlRfV0EiLCJuYW1lIjoiQWdlbnQgV0EgMSIsImlhdCI6MTY4NTg5MzE5NiwiZXhwIjoxNjg1OTIxOTk2fQ.RNE6DgcGiR5mov7Jy4Y5RQsdTOG5mvPcj2sGDeSB9D0
+
+{
+  "id": "7fc6666c-ebe5-11ed-b2a6-18cc18ff2d8b",
+  "title": "notif payment 3____change",
+  "message": "hai __name__ pembayaran anda telah kami terima"
+}
+
+### DELETE
+DELETE http://localhost:8080/afccwa/api/v1/menu/template-message
+Accept: application/json
+Content-Type: application/json
+Authorization: ad1one eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFnZW50X3dhMSIsImdyb3VwX2lkIjoiQUdFTlRfV0EiLCJuYW1lIjoiQWdlbnQgV0EgMSIsImlhdCI6MTY4NTg5MzE5NiwiZXhwIjoxNjg1OTIxOTk2fQ.RNE6DgcGiR5mov7Jy4Y5RQsdTOG5mvPcj2sGDeSB9D0
+
+{
+  "id": "e8b0baf3-eb32-11ed-b2a6-18cc18ff2d8b"
+}
+
+### CC MENU SCHEDULER
+### POST
+POST http://localhost:8080/afccwa/api/v1/menu/schedulers
+Accept: application/json
+Content-Type: application/json
+Authorization: ad1one eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFnZW50X3dhMSIsImdyb3VwX2lkIjoiQUdFTlRfV0EiLCJuYW1lIjoiQWdlbnQgV0EgMSIsImlhdCI6MTY4NTg5MzE5NiwiZXhwIjoxNjg1OTIxOTk2fQ.RNE6DgcGiR5mov7Jy4Y5RQsdTOG5mvPcj2sGDeSB9D0
+
+{
+  "limit": 100,
+  "page": 1
+}
+
+### GET
+GET http://localhost:8080/afccwa/api/v1/menu/template-messages/scheduler
+Accept: application/json
+Content-Type: application/json
+Authorization: ad1one eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFnZW50X3dhMSIsImdyb3VwX2lkIjoiQUdFTlRfV0EiLCJuYW1lIjoiQWdlbnQgV0EgMSIsImlhdCI6MTY4NTg5MzE5NiwiZXhwIjoxNjg1OTIxOTk2fQ.RNE6DgcGiR5mov7Jy4Y5RQsdTOG5mvPcj2sGDeSB9D0
+
+{
+  "limit": 1000,
+  "page": 1
+}
+
+### POST
+POST http://localhost:8080/afccwa/api/v1/menu/scheduler
+Accept: application/json
+Content-Type: application/json
+Authorization: ad1one eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFnZW50X3dhMSIsImdyb3VwX2lkIjoiQUdFTlRfV0EiLCJuYW1lIjoiQWdlbnQgV0EgMSIsImlhdCI6MTY4NTg5MzE5NiwiZXhwIjoxNjg1OTIxOTk2fQ.RNE6DgcGiR5mov7Jy4Y5RQsdTOG5mvPcj2sGDeSB9D0
+
+{
+  "title": "notif coba 2",
+  "desc": "At every minute.",
+  "type_scheduler": 3,
+  "running_at": "* * * * *",
+  "enabled": "ACTIVE"
+}
+
+
+### PUT
+PUT http://localhost:8080/afccwa/api/v1/menu/scheduler
+Accept: application/json
+Content-Type: application/json
+Authorization: ad1one eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFnZW50X3dhMSIsImdyb3VwX2lkIjoiQUdFTlRfV0EiLCJuYW1lIjoiQWdlbnQgV0EgMSIsImlhdCI6MTY4NTg5MzE5NiwiZXhwIjoxNjg1OTIxOTk2fQ.RNE6DgcGiR5mov7Jy4Y5RQsdTOG5mvPcj2sGDeSB9D0
+
+{
+  "id": "562d96c7-ee2d-11ed-b2a6-18cc18ff2d8b",
+  "title": "notif payment 3.1 update",
+  "desc": "At every minute.",
+  "type_scheduler": 1,
+  "running_at": "* * * * *",
+  "is_active": false
+}
+
+### DELETE
+DELETE http://localhost:8080/afccwa/api/v1/menu/scheduler
+Accept: application/json
+Content-Type: application/json
+Authorization: ad1one eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFnZW50X3dhMSIsImdyb3VwX2lkIjoiQUdFTlRfV0EiLCJuYW1lIjoiQWdlbnQgV0EgMSIsImlhdCI6MTY4NTg5MzE5NiwiZXhwIjoxNjg1OTIxOTk2fQ.RNE6DgcGiR5mov7Jy4Y5RQsdTOG5mvPcj2sGDeSB9D0
+
+{
+  "id": "3e7a7ff9-ee36-11ed-b2a6-18cc18ff2d8b"
+}
+
+### TOGGLE
+POST http://localhost:8080/afccwa/api/v1/menu/scheduler/toggle
+Accept: application/json
+Content-Type: application/json
+Authorization: ad1one eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFnZW50X3dhMSIsImdyb3VwX2lkIjoiQUdFTlRfV0EiLCJuYW1lIjoiQWdlbnQgV0EgMSIsImlhdCI6MTY4NTg5MzE5NiwiZXhwIjoxNjg1OTIxOTk2fQ.RNE6DgcGiR5mov7Jy4Y5RQsdTOG5mvPcj2sGDeSB9D0
+
+{
+  "id": "3e7a7ff9-ee36-11ed-b2a6-18cc18ff2d8b",
+  "is_active": "ACTIVE"
+}
+
+### CUSTOMER FILTER BY STATUS
+POST http://localhost:8080/afccwa/api/v1/customers
+Accept: application/json
+Content-Type: application/json
+Authorization: ad1one eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFnZW50X3dhMSIsImdyb3VwX2lkIjoiQUdFTlRfV0EiLCJuYW1lIjoiQWdlbnQgV0EgMSIsImlhdCI6MTY4NTg5MzE5NiwiZXhwIjoxNjg1OTIxOTk2fQ.RNE6DgcGiR5mov7Jy4Y5RQsdTOG5mvPcj2sGDeSB9D0
+
+{
+  "status_call": "contacted"
+}
+
+### CUSTOMER FILTER BY CUSTOMER NAME
+POST http://localhost:8080/afccwa/api/v1/customers/search
+Accept: application/json
+Content-Type: application/json
+Authorization: ad1one eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFnZW50X3dhMSIsImdyb3VwX2lkIjoiQUdFTlRfV0EiLCJuYW1lIjoiQWdlbnQgV0EgMSIsImlhdCI6MTY4NTg5MzE5NiwiZXhwIjoxNjg1OTIxOTk2fQ.RNE6DgcGiR5mov7Jy4Y5RQsdTOG5mvPcj2sGDeSB9D0
+
+{
+  "customer_name": "khoe"
+}
+
+### CUSTOMER BY STATUS CALL
+POST http://localhost:8080/afccwa/api/v1/customer/by-status-call
+Accept: application/json
+Content-Type: application/json
+Authorization: ad1one eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFnZW50X3dhMSIsImdyb3VwX2lkIjoiQUdFTlRfV0EiLCJuYW1lIjoiQWdlbnQgV0EgMSIsImlhdCI6MTY4NTg5MzE5NiwiZXhwIjoxNjg1OTIxOTk2fQ.RNE6DgcGiR5mov7Jy4Y5RQsdTOG5mvPcj2sGDeSB9D0
+
+{
+  "limit": 10,
+  "page": 600
+}
+
+### CUSTOMER BY STATUS CALL COUNT
+POST http://localhost:8080/afccwa/api/v1/customer/by-status-call/count
+Accept: application/json
+Content-Type: application/json
+Authorization: ad1one eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFnZW50X3dhMSIsImdyb3VwX2lkIjoiQUdFTlRfV0EiLCJuYW1lIjoiQWdlbnQgV0EgMSIsImlhdCI6MTY4NTg5MzE5NiwiZXhwIjoxNjg1OTIxOTk2fQ.RNE6DgcGiR5mov7Jy4Y5RQsdTOG5mvPcj2sGDeSB9D0
+
+### CUSTOMER LISTS STATUS CALL
+POST http://localhost:8080/afccwa/api/v1/customers/lists-status-call
+Accept: application/json
+Content-Type: application/json
+Authorization: ad1one eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFnZW50X3dhMSIsImdyb3VwX2lkIjoiQUdFTlRfV0EiLCJuYW1lIjoiQWdlbnQgV0EgMSIsImlhdCI6MTY4NTg5MzE5NiwiZXhwIjoxNjg1OTIxOTk2fQ.RNE6DgcGiR5mov7Jy4Y5RQsdTOG5mvPcj2sGDeSB9D0
