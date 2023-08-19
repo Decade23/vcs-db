@@ -1,9 +1,9 @@
 /*
  * Author: Dedi Fardiyanto Copyright (c) 2023.
  *
- * Created At: 8/19/23, 3:49 PM
+ * Created At: 8/19/23, 4:10 PM
  * Filename: scheduler.js
- * Last Modified: 8/6/23, 2:33 PM
+ * Last Modified: 8/19/23, 4:02 PM
  */
 
 const schedule = require('node-schedule');
@@ -335,7 +335,7 @@ class Scheduler {
                 // transform string into json
                 job.running_at = JSON.parse(job.running_at)
                 await this.afterCallPredictiveJob({job, running_at})
-                return
+
             }
         } catch (e) {
             logger.error(errorHandler('error run job', {e}))

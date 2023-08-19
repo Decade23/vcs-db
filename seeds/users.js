@@ -1,10 +1,12 @@
 /*
  * Author: Dedi Fardiyanto Copyright (c) 2023.
  *
- * Created At: 8/19/23, 3:49 PM
+ * Created At: 8/19/23, 4:10 PM
  * Filename: users.js
- * Last Modified: 8/19/23, 3:49 PM
- */faker} = require('@faker-js/faker');
+ * Last Modified: 8/19/23, 4:02 PM
+ */
+
+const {faker} = require('@faker-js/faker');
 const {db} = require("./../app/databases");
 const {QueryTypes} = require("sequelize");
 const {logger} = require("../app/logger");

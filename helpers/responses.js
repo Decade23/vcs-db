@@ -1,10 +1,13 @@
 /*
  * Author: Dedi Fardiyanto Copyright (c) 2023.
  *
- * Created At: 8/19/23, 3:49 PM
+ * Created At: 8/19/23, 4:10 PM
  * Filename: responses.js
- * Last Modified: 8/19/23, 3:49 PM
- */{StatusCodes, ReasonPhrases} = require("http-status-codes");
+ * Last Modified: 8/19/23, 4:02 PM
+ */
+
+
+const {StatusCodes, ReasonPhrases} = require("http-status-codes");
 
 class Responses {
 

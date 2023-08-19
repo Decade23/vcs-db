@@ -1,10 +1,12 @@
 /*
  * Author: Dedi Fardiyanto Copyright (c) 2023.
  *
- * Created At: 8/19/23, 3:49 PM
+ * Created At: 8/19/23, 4:10 PM
  * Filename: messages.js
- * Last Modified: 8/19/23, 3:49 PM
- */odel = require("./model")
+ * Last Modified: 8/19/23, 4:02 PM
+ */
+
+const Model = require("./model")
 const {QueryTypes} = require("sequelize");
 const {separateSql, cleanFormatSelectSql} = require("../helpers/slice");
 const MessageModel = require('./sequelizeModel/MessageModel')

@@ -1,10 +1,12 @@
 /*
  * Author: Dedi Fardiyanto Copyright (c) 2023.
  *
- * Created At: 8/19/23, 3:49 PM
+ * Created At: 8/19/23, 4:10 PM
  * Filename: customerHTTP.js
- * Last Modified: 8/19/23, 3:49 PM
- */uire("./http")
+ * Last Modified: 8/19/23, 4:02 PM
+ */
+
+const Http = require("./http")
 const CustomerModel = require("../models/customerModel")
 const {transformerCustomerSearch} = require("../transform/menu/CustomerTransform");
 

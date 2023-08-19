@@ -1,9 +1,9 @@
 #
 # Author: Dedi Fardiyanto Copyright (c) 2023.
 #
-# Created At: 8/19/23, 3:49 PM
+# Created At: 8/19/23, 4:10 PM
 # Filename: initial.sh
-# Last Modified: 8/19/23, 3:26 PM
+# Last Modified: 8/19/23, 4:02 PM
 #
 
 yarn add express morgan body-parser cors fs dotenv

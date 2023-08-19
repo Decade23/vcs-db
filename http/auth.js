@@ -1,10 +1,12 @@
 /*
  * Author: Dedi Fardiyanto Copyright (c) 2023.
  *
- * Created At: 8/19/23, 3:49 PM
+ * Created At: 8/19/23, 4:10 PM
  * Filename: auth.js
- * Last Modified: 8/19/23, 3:49 PM
- */ttp = require("./http")
+ * Last Modified: 8/19/23, 4:02 PM
+ */
+
+const Http = require("./http")
 const CCUser = require("../models/cc_user")
 const Logs = require("../models/logs")
 const Auth = require("../models/auth")

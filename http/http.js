@@ -1,10 +1,12 @@
 /*
  * Author: Dedi Fardiyanto Copyright (c) 2023.
  *
- * Created At: 8/19/23, 3:49 PM
+ * Created At: 8/19/23, 4:10 PM
  * Filename: http.js
- * Last Modified: 8/19/23, 3:49 PM
- */xios = require("axios");
+ * Last Modified: 8/19/23, 4:02 PM
+ */
+
+const axios = require("axios");
 require("dotenv").config()
 
 class Http {

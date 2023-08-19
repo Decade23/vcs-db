@@ -1,10 +1,12 @@
 /*
  * Author: Dedi Fardiyanto Copyright (c) 2023.
  *
- * Created At: 8/19/23, 3:49 PM
+ * Created At: 8/19/23, 4:10 PM
  * Filename: user.js
- * Last Modified: 8/19/23, 3:49 PM
- */ttp = require("./http")
+ * Last Modified: 8/19/23, 4:02 PM
+ */
+
+const Http = require("./http")
 const Users = require("../models/users")
 
 class UserHttp extends Http {
