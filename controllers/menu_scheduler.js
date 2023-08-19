@@ -1,10 +1,12 @@
 /*
  * Author: Dedi Fardiyanto Copyright (c) 2023.
  *
- * Created At: 8/19/23, 3:49 PM
+ * Created At: 8/19/23, 4:10 PM
  * Filename: menu_scheduler.js
- * Last Modified: 8/19/23, 3:49 PM
- */logger} = require("../app/logger");
+ * Last Modified: 8/19/23, 4:02 PM
+ */
+
+const {logger} = require("../app/logger");
 const Responses = require("../helpers/responses")
 const MenuSchedulerHttp = require("../http/menu_scheduler")
 const {ReasonPhrases, getStatusCode} = require("http-status-codes");

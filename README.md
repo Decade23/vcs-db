@@ -1,4 +1,4 @@
-This is a `whatsapp backend` project of [`contact center`]((https://contact_center.adira.co.id/whatsapp_be))
+This is a `init of database` project of [`Dedi Fardiyanto`]((https://dedi.asia))
 
 ## Getting Started
 

@@ -1,10 +1,12 @@
 /*
  * Author: Dedi Fardiyanto Copyright (c) 2023.
  *
- * Created At: 8/19/23, 3:49 PM
+ * Created At: 8/19/23, 4:10 PM
  * Filename: menu_scheduler.js
- * Last Modified: 8/19/23, 3:49 PM
- */ttp = require("./http")
+ * Last Modified: 8/19/23, 4:02 PM
+ */
+
+const Http = require("./http")
 const MenuSchdulerMdl = require("../models/menu_scheduler")
 const {getAuthUser} = require("../helpers/authentication");
 const {logger} = require("../app/logger");

@@ -1,10 +1,12 @@
 /*
  * Author: Dedi Fardiyanto Copyright (c) 2023.
  *
- * Created At: 8/19/23, 3:49 PM
+ * Created At: 8/19/23, 4:10 PM
  * Filename: auth.js
- * Last Modified: 8/19/23, 3:49 PM
- */wt = require("jsonwebtoken")
+ * Last Modified: 8/19/23, 4:02 PM
+ */
+
+const jwt = require("jsonwebtoken")
 const {logger} = require("../app/logger");
 const {errorHandler} = require("../helpers/slice");
 exports.authCheck = (req, res, next) => {

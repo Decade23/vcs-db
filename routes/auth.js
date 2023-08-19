@@ -1,10 +1,12 @@
 /*
  * Author: Dedi Fardiyanto Copyright (c) 2023.
  *
- * Created At: 8/19/23, 3:49 PM
+ * Created At: 8/19/23, 4:10 PM
  * Filename: auth.js
- * Last Modified: 8/19/23, 3:49 PM
- */xpress = require("express")
+ * Last Modified: 8/19/23, 4:02 PM
+ */
+
+const express = require("express")
 
 const router = express.Router()
 

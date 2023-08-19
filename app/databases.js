@@ -1,10 +1,12 @@
 /*
  * Author: Dedi Fardiyanto Copyright (c) 2023.
  *
- * Created At: 8/19/23, 3:49 PM
+ * Created At: 8/19/23, 4:10 PM
  * Filename: databases.js
- * Last Modified: 8/19/23, 3:49 PM
- */"dotenv").config()
+ * Last Modified: 8/19/23, 4:02 PM
+ */
+
+require("dotenv").config()
 
 // db
 const {Sequelize} = require("sequelize");

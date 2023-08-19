@@ -1,10 +1,12 @@
 /*
  * Author: Dedi Fardiyanto Copyright (c) 2023.
  *
- * Created At: 8/19/23, 3:49 PM
+ * Created At: 8/19/23, 4:10 PM
  * Filename: LogSchedulerModel.js
- * Last Modified: 8/19/23, 3:49 PM
- */ {DataTypes, Model} = require("sequelize")
+ * Last Modified: 8/19/23, 4:02 PM
+ */
+
+const {DataTypes, Model} = require("sequelize")
 const {logger} = require("../../app/logger");
 const {date} = require("../../helpers/format");
 const {syncOptModel} = require("../../helpers/options");

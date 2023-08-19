@@ -1,10 +1,11 @@
 /*
  * Author: Dedi Fardiyanto Copyright (c) 2023.
  *
- * Created At: 8/19/23, 3:49 PM
+ * Created At: 8/19/23, 4:10 PM
  * Filename: wa.js
- * Last Modified: 8/19/23, 3:49 PM
- */ogger} = require("../app/logger");
+ * Last Modified: 8/19/23, 4:02 PM
+ */
+const {logger} = require("../app/logger");
 const Responses = require("../helpers/responses")
 const WaHttp = require("../http/wa")
 const {errorHandler} = require("../helpers/slice");

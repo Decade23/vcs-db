@@ -1,10 +1,12 @@
 /*
  * Author: Dedi Fardiyanto Copyright (c) 2023.
  *
- * Created At: 8/19/23, 3:49 PM
+ * Created At: 8/19/23, 4:02 PM
  * Filename: model.js
- * Last Modified: 8/19/23, 3:49 PM
- */Sequelize} = require("sequelize");
+ * Last Modified: 8/19/23, 4:02 PM
+ */
+
+const {Sequelize} = require("sequelize");
 const {logger} = require("../app/logger");
 const {sleep} = require("../helpers/timer");
 const mysql = require('mysql2/promise')
